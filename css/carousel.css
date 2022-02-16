@@ -1,0 +1,78 @@
+.carousel__wrapper {
+  width: 100%;
+  max-width: 1283px;
+  position: relative;
+  margin: 0 auto
+}
+
+.carousel__item {
+  display: none;
+  height: auto;
+  text-align: center;
+}
+
+.carousel__imgs{
+  width: 100%;
+}
+
+.carousel__imgs-vertical{
+  width: 50%;
+}
+
+.carousel__item_first{
+  display: block;
+}
+
+.btn_prev,
+.btn_next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #e7e751;
+  font-weight: bold;
+  font-size: 60px;
+  transition: .6s ease;
+  border-radius: 3px 3px 3px 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn_next {
+  right: 20px;
+
+}
+
+.btn_prev {
+  left: 20px;
+
+}
+
+.btn_prev:hover,
+.btn_next:hover {
+  color: #e7e751;
+  background-color: rgba(0, 0, 0, 0.8)
+}
+
+
+.dots {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+  background-color: #e7e751;
+}
