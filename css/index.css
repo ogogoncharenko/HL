@@ -24,6 +24,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     color: #fff;
+    background: #0e0e0e;
 }
 
 *,
@@ -48,6 +49,8 @@ ul, li{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* header */
 
 .header{
     padding-top: 30px;
@@ -126,8 +129,7 @@ ul, li{
     position: relative;
     width: 100%;
     height: 100vh;
-    background: url(../src/bg-main.png) center no-repeat;
-    background-size: cover;
+    background: #0e0e0e;
     padding-top: 130px;
 }
 
@@ -139,6 +141,7 @@ main:hover .btn__kamaschool {
 /* line */
 
 .line__title{
+    position: relative;
     width: 100%;
     font-family: RussoOne-Regular;
     font-size: 40px;
@@ -150,6 +153,7 @@ main:hover .btn__kamaschool {
     align-items: center;
     background-color: #e7e751;
     padding: 30px 0;
+    text-transform: uppercase;
 }
 
 .line__title--smaller{
@@ -160,9 +164,9 @@ main:hover .btn__kamaschool {
 
 /* servises */
 
-.servises{
+/* .servises{
     background: #0e0e0e;
-}
+} */
 
 .servises__emotion{
     display: flex;
@@ -344,8 +348,7 @@ main:hover .btn__kamaschool {
     text-transform: lowercase;
     text-align: left;
     font-size: 17px;
-    margin: 0;
-    padding-top: 40px;
+    margin: 30px 0 0 0;
 }
 
 .sex__list-item{
@@ -424,7 +427,7 @@ main:hover .btn__kamaschool {
     color: #e7e751;
 }
 
-
+/* icons */
 
 .icon-img{
     margin: 20px;
