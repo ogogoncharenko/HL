@@ -135,7 +135,10 @@ main:hover .btn__kamaschool {
     color: #e7e751;
 }
 
-.servises__text{
+
+/* line */
+
+.line__title{
     width: 100%;
     font-family: RussoOne-Regular;
     font-size: 40px;
@@ -149,11 +152,13 @@ main:hover .btn__kamaschool {
     padding: 30px 0;
 }
 
-.servises__text--smaller{
+.line__title--smaller{
     font-size: 30px;
     font-family: Neucha-Regular; 
     padding: 0 0;
 }
+
+/* servises */
 
 .servises{
     background: #0e0e0e;
@@ -165,7 +170,7 @@ main:hover .btn__kamaschool {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    padding: 45px 0 45px 0;
+    padding: 40px 0;
 }
 
 .emotion__item{
@@ -180,7 +185,7 @@ main:hover .btn__kamaschool {
     border-radius: 10%;
 }
 
-.emotion__img--text{
+.emotion__text{
     font-family: Neucha-Regular; 
     position: absolute;
     width: 100%;
@@ -198,21 +203,20 @@ main:hover .btn__kamaschool {
     transition: opacity .2s linear;
 }
 
-.emotion__item:hover .emotion__img--text{
+.emotion__item:hover .emotion__text{
     opacity: 1;
 }
 
-.work{
-    margin: 0 auto;
+
+/* number-block */
+
+.number-block{
+    margin: 40px auto;
     text-align: center;
 }
 
-.work__item{
-    padding-bottom: 40px;
-}
-
-.work__number{
-    margin: 0 auto 40px;
+.number-block__number{
+    margin: 0 auto;
     width: 50px;
     height: 50px;
     color: #0e0e0e;
@@ -223,33 +227,80 @@ main:hover .btn__kamaschool {
     line-height: 50px;
 }
 
-.work__title{
+.number-block__title{
     color: #fff;
     font-size: 38px;
     font-weight: 800;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
-.work__text{
+.number-block__text{
     color: #fff;
     font-size: 30px;
     font-weight: 500;
+    padding-bottom: 40px;
 }
 
-.help_container{
-    padding-top: 40px;
+.number-block__phone{
+    text-decoration: none;
+    color: #fff;
+}
+
+.number-block__text--note{
+    font-family: Neucha-Regular;
+    font-size: 24px;
+}
+
+.number-block__text--bold{
+    font-weight: 800;
+}
+
+.number-block--line::after{
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #e7e751;
+    margin: 60px auto;
+}
+
+.number-block__title--padding{
+    padding: 0 0 20px 0;
+}
+
+.number-block__text--padding{
+    padding: 0 0 20px 0;
+}
+
+.number-block__email{
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* list */
+
+.list_container{
     text-align: center;
 }
 
-.help__list{
+.list__items{
     list-style: none;
     display: inline-block;
     text-align: left;
     margin: 0;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
-.help__item::before{
+.list__item{
+    color: #fff;
+    text-align: left;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+
+.list__item::before{
     content: "\2022";
     color: #e7e751;
     font-weight: 900; 
@@ -258,26 +309,26 @@ main:hover .btn__kamaschool {
     width: 1.4em; 
 }
 
-.help__item{
-    text-align: center;
-    color: #fff;
-    text-align: left;
+.list__item--note{
+    list-style-type: none;
+    font-family: Neucha-Regular;
     font-size: 20px;
-    line-height: 1.8em;
+    line-height: 30px;
 }
 
-.help__img{
-    width: 50%;
-    border-radius: 5%;
+.list__item--note::before{
+    content: none;
 }
 
-.sex__help{
+/* sex */
+
+.sex__items{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
     color: #fff;
-    padding: 40px 0 50px;
+    padding: 40px 0;
 }
 
 .sex__title{
@@ -297,11 +348,11 @@ main:hover .btn__kamaschool {
     padding-top: 40px;
 }
 
-.sex__item{
+.sex__list-item{
     padding: 5px 0 0 10px;
 }
 
-.sex__item::before{
+.sex__list-item::before{
     content: "\2022";
     color: #e7e751;
     font-weight: 900; 
@@ -309,79 +360,75 @@ main:hover .btn__kamaschool {
     width: 1.4em; 
 }
 
-.work__title--color{
-    color: #e7e751;
-    text-transform: uppercase;
-}
 
-.help__list--padding{
-    padding-top: 40px;
-}
+/* symbol */
 
-.help__item--note{
-    list-style-type: none;
-    font-family: Neucha-Regular;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.help__item--note::before{
-    content: none;
-}
-
-.help__list--spase{
-    padding: 40px 0;
-    margin-left: 50px;
-}
-
-.help__img{
-    margin: 7px 7px 0 7px;
-    float: right;
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.symbol{
-    position: absolute;
+.symbol__holder{
+    position: relative;
 }
 
 .symbol__item{
     position: absolute;
     color: #e7e751;
     font-size: 70px;
-    top: 1px;
+    top: 0;
     left: -46px;
 }
 
-.work__item--spase{
-    padding-top: 50px;
-}
-
-.work__phone{
-    text-decoration: none;
-    color: #fff;
-}
-
-.main-task__item{
-
-}
+/* main-task */
 
 .main-task__img{
-    margin: 7px 7px 0 7px;
+    padding: 7px 7px 0 7px;
     float: right;
     width: 50%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 15px;
 }
+
+
+/* price */
 
 .price__list{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+
 }
 .price__item{
     width: 33%;
+    text-align: center;
+}
+
+.price__title {
+    font-family: Neucha-Regular;
+    font-size: 30px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+.price__cost {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 20px 0;
+    color: #e7e751;
+}
+.price__time {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.price__text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #e7e751;
+}
+
+
+
+.icon-img{
+    margin: 20px;
+    height: 40px;
 }
 
 
