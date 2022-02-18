@@ -147,13 +147,13 @@ main:hover .btn__kamaschool {
     font-size: 40px;
     font-style: normal;
     font-weight: 500;
+    text-transform: uppercase;
     color: #0e0e0e;
     top: 0;
     text-align: center;
     align-items: center;
     background-color: #e7e751;
     padding: 30px 0;
-    text-transform: uppercase;
 }
 
 .line__title--smaller{
