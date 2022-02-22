@@ -28,26 +28,25 @@
 .btn_next {
   cursor: pointer;
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: auto;
-  margin-top: -22px;
   padding: 16px;
   color: #e7e751;
   font-weight: bold;
   font-size: 60px;
   transition: .6s ease;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn_next {
   right: 20px;
-
+  transform: translate(0, -50%);
 }
 
 .btn_prev {
   left: 20px;
-
+  transform: translate(0, -50%);
 }
 
 .btn_prev:hover,
