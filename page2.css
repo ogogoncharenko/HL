@@ -23,3 +23,40 @@
     display: none;
     overflow: hidden;
   }
+
+  body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.item {
+  width: 5rem;
+  height: 5rem;
+  background: #ccc;
+  margin: .5rem;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  
+  border: 1px solid #eee;
+  margin: 2rem;
+}
+
+.flex.fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.block{
+    width: 1000px;
+    height: 1000px;
+    background-color: red;
+}
