@@ -85,7 +85,7 @@ ul, li{
     top: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    background-color: transparent;
+    background-color: #0e0e0e;
     transition: top .4s cubic-bezier(0.13, 1.19, 0.79, 0.85);
 }
 
@@ -99,20 +99,18 @@ ul, li{
     font-size: 30px;
     font-weight: 400;
     color: #fff;
+    text-decoration: none;
+    transition: color .2s; 
+}
+
+.header__logo:hover{
+    color: #e7e751;
 }
 
 /* navigation */
 
 .navigation{
     text-transform: uppercase;
-}
-
-.navigation__active{
-    display: none;
-}
-
-.header__logo{
-    text-decoration: none;
 }
 
 .nav__link{
@@ -150,6 +148,79 @@ ul, li{
 
 .nav__link:hover:after {
     opacity: 1;
+}
+
+.nav__toggle {
+    display: none;
+    width: 30px;
+    padding: 10px 0;
+    position: absolute;
+    right: 24px;
+    bottom: 8px;
+    color: rgb(230, 23, 23);
+    z-index: 1;
+    border: 0;
+    background: none;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: backgroung .2s linear;
+}
+
+.toggle__item::after, .toggle__item::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transition: transform .2s linear;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+} 
+
+.toggle__item::after{
+    top: 8px;
+}
+
+.toggle__item::before{
+    top: -8px;
+}
+
+.nav__toggle.active .toggle__item::after {
+    transform-origin: left bottom;
+    transform: rotate(45deg) translateY(0px);
+}
+
+.nav__toggle.active .toggle__item::before {
+    transform-origin: left top;
+    transform: rotate(-45deg) translateY(0px);
+}
+
+.nav__toggle.active .toggle__item {
+    background: none;
+}
+
+.nav__toggle.active .toggle__item::after {
+    top: -13px;
+    background-color: #e7e751;
+}
+
+.nav__toggle.active .toggle__item::before {
+    top: 8px;
+    background-color: #e7e751;
 }
 
 /* aboutme */
@@ -199,7 +270,7 @@ ul, li{
     width: 100%;
     height: 100vh;
     background: #0e0e0e;
-    padding-top: 130px;
+    padding: 130px 0 40px;
 }
 
 .aboutme__info:hover .btn__kamaschool {
@@ -587,16 +658,34 @@ ul, li{
     }
 
     .carousel__wrapper {
-        width: 90%;
+        width: 70%;
     }
 
     .btn_prev, .btn_next {
         padding: 10px;
     }
-
+}
 
 @media(max-width: 990px) {
 
+    .navigation__active {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: #0e0e0e;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 12px 20px;
+    }
+
+    .nav__link:first-of-type {
+        padding-top: 20px;
+    }
 }
 
 @media(max-width: 770px) {}

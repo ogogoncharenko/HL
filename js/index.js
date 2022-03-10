@@ -1,36 +1,46 @@
 let headerInner = document.querySelector('.header__inner');
 let headerLine = document.querySelector('.header__line');
-// let headerSticky = header.scrollTop;
 
-window.addEventListener('scroll', headerSrcollController)
-
-
-
+window.addEventListener('scroll', headerSrcollController);
 
 function headerSrcollController() {
-    console.log(window.scrollY)
-
+    // console.log(window.scrollY)
     if (window.scrollY > 10) {
         headerInner.classList.add('header_fixed-large');
         headerLine.classList.add('header__line--visible');
     }
     else if (window.scrollY <= 9) {
-        console.log(window.scrollY == 0 + 'px');
-        console.log(window.scrollY)
         headerInner.classList.remove('header_fixed-large');
         headerLine.classList.remove('header__line--visible');
     }
 
 }
 
-// window.onscroll = function() {scrollInspector()};
+let windowSize = window.matchMedia('(max-width: 990px)');
+let navToggle = document.querySelector('.nav__toggle')
 
-// function scrollInspector() {
-//     if (window.scrollY > sticky) {
-//         headerInner.classList.add("header_fixed-large");
-//         headerLine.classList.add("header_line");
-//     } else {
-//         headerInner.classList.remove("header_fixed-large");
-//         headerLine.classList.remove("header_line");
-//     }
-// }
+window.addEventListener('resize', windowWidthWatcher);
+
+function windowWidthWatcher() {
+    if (windowSize.matches) {
+        navToggle.style.display = "block";
+    } else if (windowSize > 990 + 'px') {
+        navToggle.style.display = "none";
+    } else {}
+}
+
+windowWidthWatcher(windowSize);
+
+let navWindow = document.querySelector('.navigation__active');
+
+navToggle.addEventListener('click', navBtnController);
+
+function navBtnController(e){
+    if (e.target.className == 'nav__toggle' || e.target.className == 'toggle__item') {
+        console.log(e.target.className);
+        navToggle.classList.toggle('active');
+        if(navWindow.style.display != 'block') {
+        navWindow.style.display = 'block';
+        } else (navWindow.style.display = 'none');
+    } else {}
+}
