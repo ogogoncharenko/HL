@@ -41,6 +41,7 @@ function navBtnController(e){
         navToggle.classList.toggle('active');
         if(navWindow.style.display != 'block') {
         navWindow.style.display = 'block';
-        } else (navWindow.style.display = 'none');
+        } else if(navWindow.style.display = 'block')
+        (navWindow.style.display = '');
     } else {}
 }
