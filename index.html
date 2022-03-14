@@ -14,6 +14,17 @@
 </head>
 <body>
 
+    <div class="wrapper__ageverificator">
+        <div class="ageverificator">
+            <div class="ageverificator__text">Сайт предназначен только для лиц старше 18 лет</div>
+            <div class="ageverificator__btns">
+                <button class="btn-no">Мне нет 18 лет</button>
+                <button class="btn-yes">Мне есть 18 лет</button>
+            </div>
+            <div class="ageverificator__failed"></div>
+        </div>
+    </div>
+        
 <!-- header -->
 
     <header class="header">
@@ -22,12 +33,11 @@
             <div class="header__inner">
                 <a class="header__logo" href="#1">HL</a>
                 <nav class="navigation navigation__active">
-                    <a class="nav__link" href="#1">Кто я</a>
                     <a class="nav__link" href="#2">С кем работаю</a>
-                    <a class="nav__link" href="#3">Принимаю</a>
                     <a class="nav__link" href="#4">Моё образование</a>
                     <a class="nav__link" href="#5">Сколько стоит</a>
                     <a class="nav__link" href="#6">График работы</a>
+                    <a class="nav__link" href="#7">Контакты</a>
                 </nav>
                 <button class="nav__toggle">
                     <span class="toggle__item">Menu</span>
@@ -49,7 +59,7 @@
                         <div>Сексолог</div>
                         <div>Член Ассоциации Сексологов</div>
                         <div>Психолог</div>
-                        <div>Основатель и руководитель школы духовного сексуального развития <a class="btn__kamaschool" href="#">“Kama School”</a></div>  
+                        <div>Основатель и руководитель школы духовного сексуального развития<a class="btn__kamaschool" href="#">“Kama School”</a></div>  
                     </div>
                 </div>
                 <img class="aboutme__img" src="./src/aboutme__img.png"></img>
@@ -58,17 +68,18 @@
     </main>
 
 <!-- servises -->
-
+    
     <section class="servises">
         <div class="wrapper">
+
             <div class="line__container">
                 <div class="line__title">Все о психотерапии, консультации и диагностике</div>
-                <button class="line__button" type="button">
-                    <div class="button__arrow arrow--down"></div>
-                </button>
+                <!-- <button class="line__button" type="button">
+                    <div class="button__arrow arrow--up"></div>
+                </button> -->
             </div>
             
-            <div class="accordion__wrapper">
+            <div class="accordion__wrapper--without-act">
                 <div class="servises__emotion">
                     <div class="emotion__item">
                         <img class="emotion__img" src="./src/1влюблённость.png">
@@ -108,23 +119,6 @@
                     </div>
                 </div>
             </div>
-            
-
-            <div class="number-block" id="2">
-                <div class="number-block__item">
-                    <div class="number-block__number">1</div>
-                    <div class="number-block__title">С кем работаю</div>
-                    <div class="number-block__text">Женщины, Мужчины, Пары<br>от 18 до 60 лет</div>
-                </div>
-            </div>
-            <div class="number-block">
-                <div class="number-block__item">
-                    <div class="number-block__number">2</div>
-                    <div class="number-block__title">С чем работаю</div>
-                    <div class="number-block__text">Индивидуальная психотерапия<br>Семейная психотерапия<br>Консультирование</div>
-                </div> 
-            </div>
-
 
             <div class="line__container">
                 <div class="line__title">ПСИХОТЕРАПЕВТИЧЕСКАЯ ПОМОЩЬ</div>
@@ -162,7 +156,7 @@
             
             <div class="line__container">
                 <div class="line__title">ЕСЛИ ВЫ ИМЕЕТЕ РЯД СИМПТОМОВ, НО ДО КОНЦА ЕЩЕ НЕТ ЧЕТКОГО ПОНИМАНИЯ, ЧТО С ВАМИ?
-                    <div class="line__title line__title--smaller">Вы можете обратиться за помощью с такой выраженной или слабой симптоматикой, которая вас волнует или мешает жить:</div>
+                    <div class="line__title--smaller">Вы можете обратиться за помощью с такой выраженной или слабой симптоматикой, которая вас волнует или мешает жить:</div>
                 </div>
                 <button class="line__button" type="button">
                     <div class="button__arrow"></div>
@@ -209,7 +203,7 @@
             </div>
             
             <div class="line__container">
-                <div class="line__title">СЕКСОЛОГИЧЕСКАЯ ПОМОЩЬ:</div>
+                <div class="line__title">СЕКСОЛОГИЧЕСКАЯ ПОМОЩЬ</div>
                 <button class="line__button" type="button">
                     <div class="button__arrow"></div>
                 </button>
@@ -335,6 +329,7 @@
                 <button class="line__button" type="button">
                     <div class="button__arrow"></div>
                 </button>
+                <div id="2"></div>
             </div>
 
             <div class="accordion__wrapper accordion__wrapper--non-active">
@@ -361,18 +356,26 @@
                     </ul>
                 </ul> 
             </div>
-                                
-            <div class="number-block" id="3">
+
+            <div class="number-block number-block--top-space">
                 <div class="number-block__item">
-                    <div class="number-block__number">3</div>
-                    <div class="number-block__title">Принимаю клиентов онлайн<br>Viber, WhatsApp, Skype, FaceTime</div>
-                    <div class="number-block__text"><a class="number-block__phone" href="tel:+380976484442">+38 097 648 44 42</a><br>с 9.00 до 18.00</div>
+                    <div class="number-block__number">1</div>
+                    <div class="number-block__title">С кем работаю</div>
+                    <div class="number-block__text">Женщины, Мужчины, Пары<br>от 18 до 60 лет</div>
                 </div>
             </div>
-
-            <div class="number-block" id="4">
+            <div class="number-block">
                 <div class="number-block__item">
-                    <div class="number-block__number">4</div>
+                    <div class="number-block__number">2</div>
+                    <div class="number-block__title">С чем работаю</div>
+                    <div class="number-block__text">Индивидуальная психотерапия<br>Семейная психотерапия<br>Консультирование<div class="div" id="4"></div></div>
+                </div> 
+            </div>
+            
+
+            <div class="number-block">
+                <div class="number-block__item">
+                    <div class="number-block__number">3</div>
                     <div class="number-block__title number-block__title--bottom">Образование</div>
                 </div>
             </div>
@@ -425,6 +428,7 @@
                         <a class="btn_next" type="button" data-btn="btn_next">&#10095;</a>
                     </div>
                 </div>
+                <div class="div" id="5"></div>
                 <div class="dots">
                     <span class="dot active" data-dot="1"></span>
                     <span class="dot" data-dot="2"></span>
@@ -440,12 +444,13 @@
                     <span class="dot" data-dot="12"></span>
                     <span class="dot" data-dot="13"></span>
                     <span class="dot" data-dot="14"></span>
+                    
                 </div>
             </div>
 
-            <div class="number-block" id="5">
+            <div class="number-block">
                 <div class="number-block__item">
-                    <div class="number-block__number">5</div>
+                    <div class="number-block__number">4</div>
                     <div class="number-block__title number-block__title--bottom">Сколько стоит?</div>
                 </div>
             </div>
@@ -464,35 +469,33 @@
                     </div>
                     <div class="price__item">
                         <div class="price__title">Прием психиатра, гинеколога, уролога: по необходимости</div>
-                        <div class="price__text">Индивидуальный прайс<br>специалистов</div> 
+                        <div class="price__text">Индивидуальный прайс<br>специалистов</div><div class="div" id="6"></div> 
                     </div>
                 </div>
             </div>
-
-            <div class="number-block number-block--line">
+            
+            <div class="number-block">
                 <div class="number-block__item">
-                    <div class="number-block__number">6</div>
-                    <div class="number-block__title">По всем дополнительным вопросам<br>пишите в WhatsApp</div>
-                    <div class="number-block__text"><a class="number-block__phone" href="https://wa.me/380976484442" target="_blank">+38 097 648 44 42</a></div>
-                    <div class="number-block__text--note">Не забывайте уважать личное время и границы специалиста и не писать в не рабочее время и в выходные дни.<br>Вы можете написать в любое время, но не настаивать и не ожидать быстрого ответа.<br>Специалист свяжется с вами, как только освободиться и ответит как можно быстрее.</div>
-                </div>
-            </div>
-
-            <div class="number-block number-block--line">
-                <div class="number-block__item">
-                    <div class="number-block__title number-block__title--padding">График работы</div>
+                    <div class="number-block__number">5</div>
+                    <div class="number-block__title">График работы</div>
                     <div class="number-block__text number-block__text--padding">понедельник – суббота</div>
                     <div class="number-block__text number-block__title--padding number-block__text--bold">9:00 – 18.00</div>
-                    <div class="number-block__text number-block__title--padding">Воскресенье: выходной</div>
+                    <div class="number-block__text number-block__title--padding"><div class="div" id="7"></div>Воскресенье: выходной</div>
                 </div>
             </div>
 
-            <div class="number-block" id="6">
+            
+            <div class="number-block">
                 <div class="number-block__item">
-                    <div class="number-block__title number-block__title--padding"><a class="number-block__email" href="mailto:Hannalavryk999@gmail.com">E-mail: Hannalavryk999@gmail.com</a></div>
+                    <div class="number-block__number">6</div>
+                    <div class="number-block__title">Контакты</div>
+                    <div class="number-block__text number-block__title--padding">Принимаю клиентов онлайн</div>
+                    <div class="number-block__text"><a class="number-block__phone number-block__phone--hover" href="tel:+380976484442">+38 097 648 44 42</a><br>с 9.00 до 18.00</div>
+                    <div class="number-block__text number-block__title--padding">По всем дополнительным вопросам<br>пишите в <a class="number-block__phone number-block__phone--hover" href="https://wa.me/380976484442" target="_blank">WhatsApp</a></div>
+                    <div class="number-block__title number-block__title--padding"><a class="number-block__email number-block__phone--hover" href="mailto:Hannalavryk999@gmail.com">E-mail: Hannalavryk999@gmail.com</a></div>
                     <div class="number-block__text number-block__text--padding">Киев</div>
                     <div class="number-block__text number-block__title--padding">Украина</div>
-                    <div class="number-block__text number-block__title--padding">
+                    <div class="number-block__social-icons">
                         <a href="https://www.instagram.com/kamaschool.official/?hl=ru" target="_blank"><img class="icon-img" src="./src/icons/instagram.png"></a>
                         <a href="tg://resolve?domain=@L9Anna9" target="_blank"><img class="icon-img" src="./src/icons/telegram.png"></a>
                         <a href="https://wa.me/380976484442" target="_blank"><img class="icon-img" src="./src/icons/whatsapp.png"></a>
@@ -501,7 +504,9 @@
                         <a href="https://www.facebook.com/profile.php?id=100021055924329" target="_blank"><img class="icon-img" src="./src/icons/facebook.png"></a>
                     </div>
                 </div>
+                <div class="number-block__text--note">Не забывайте уважать личное время и границы специалиста и не писать в не рабочее время и в выходные дни.<br>Вы можете написать в любое время, но не настаивать и не ожидать быстрого ответа.<br>Специалист свяжется с вами, как только освободиться и ответит как можно быстрее</div>
             </div>
+
         </div>
     </section>
 
