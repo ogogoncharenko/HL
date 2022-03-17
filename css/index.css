@@ -101,12 +101,12 @@ ul, li{
 .ageverification__failed{
     font-size: 50px;
     color: #e7e751;
+    text-align: center;
 }
 
 .wrapper__ageverification--show{
     display: block;
 }
-
 
 /* header */
 
@@ -327,7 +327,7 @@ ul, li{
     width: 100%;
     height: 100vh;
     background: #0e0e0e;
-    padding: 130px 0 40px;
+    margin: 130px 0 40px;
 }
 
 .aboutme__info:hover .btn__kamaschool {
@@ -872,6 +872,10 @@ ul, li{
 
     .btn-no, .btn-yes {
         margin: 30px 10px 0;
+    }
+
+    .ageverification__failed {
+        font-size: 26px;
     }
 
 }
