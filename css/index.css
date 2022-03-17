@@ -50,9 +50,9 @@ ul, li{
     margin: 0 auto;
 }
 
-/* ageverificator */
+/* ageverification */
 
-.wrapper__ageverificator{
+.wrapper__ageverification{
     display: none;
 
     width: 100%;
@@ -66,7 +66,7 @@ ul, li{
     opacity: 0.95;
 }
 
-.ageverificator{
+.ageverification{
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
@@ -76,7 +76,7 @@ ul, li{
     align-items: center;
 }
 
-.ageverificator__text{
+.ageverification__text{
     font-size: 36px;
     color: #e7e751;
 }
@@ -97,12 +97,12 @@ ul, li{
     background: red;
 }
 
-.ageverificator__failed{
+.ageverification__failed{
     font-size: 50px;
     color: #e7e751;
 }
 
-.wrapper__ageverificator--show{
+.wrapper__ageverification--show{
     display: block;
 }
 
@@ -366,6 +366,7 @@ ul, li{
 
 .line__button{
     padding: 0;
+    margin-left: 10px;
     border: none;
     font: inherit;
     color: inherit;
@@ -849,6 +850,20 @@ ul, li{
         font-size: 22px;
     }
 
+    .line__button {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .button__arrow {
+        top: 13px;
+        left: 10px;
+    }
+
+    .arrow--down {
+        top: 7px;
+        left: 10px;
+    }
 
 }
 

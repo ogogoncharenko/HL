@@ -1,9 +1,9 @@
 let headerInner = document.querySelector('.header__inner');
 let headerLine = document.querySelector('.header__line');
 
-window.addEventListener('scroll', headerSrcollController);
+window.addEventListener('scroll', headerScrollController);
 
-function headerSrcollController() {
+function headerScrollController() {
     // console.log(window.scrollY)
     if (window.scrollY > 10) {
         headerInner.classList.add('header_fixed-large');
@@ -43,29 +43,29 @@ function navBtnController(e){
     } else {}
 }
 
-let ageVerificatorBtns = document.querySelector('.ageverificator__btns');
-let ageVerificatorFailed = document.querySelector('.ageverificator__failed');
-let wrapperAgeVerificator = document.querySelector('.wrapper__ageverificator');
-let ageVerificatorText = document.querySelector('.ageverificator__text');
-ageVerificatorBtns.addEventListener('click', ageVerificatorBtnsController);
+let ageVerificationBtns = document.querySelector('.ageverification__btns');
+let ageVerificationFailed = document.querySelector('.ageverification__failed');
+let wrapperAgeVerification = document.querySelector('.wrapper__ageverification');
+let ageVerificationText = document.querySelector('.ageverification__text');
+ageVerificationBtns.addEventListener('click', ageVerificationBtnsController);
 
-function ageVerificatorBtnsController(e) {
+function ageVerificationBtnsController(e) {
     if (e.target.className == 'btn-no') {
-        ageVerificatorFailed.innerHTML = 'К сожалению, доступ на сайт для вас закрыт';
-        ageVerificatorBtns.remove();
-        ageVerificatorText.remove();
+        ageVerificationFailed.innerHTML = 'К сожалению, доступ на сайт для вас закрыт';
+        ageVerificationBtns.remove();
+        ageVerificationText.remove();       
     } else if (e.target.className == 'btn-yes') {
-        localStorage.setItem('ageVerefication', true);
-        wrapperAgeVerificator.style.display = 'none';
+        localStorage.setItem('ageVerification', true);
+        wrapperAgeVerification.style.display = 'none';
     } else {}
 }
 
-const cheackAge = () => {
-    console.log(localStorage.getItem('ageVerefication'))
-    if (localStorage.getItem('ageVerefication')) return;
+const checkAge = () => {
+    console.log(localStorage.getItem('ageVerification'))
+    if (localStorage.getItem('ageVerification')) return;
 
-    wrapperAgeVerificator.classList.add('wrapper__ageverificator--show');
+    wrapperAgeVerification.classList.add('wrapper__ageverification--show');
 }
 
-cheackAge();
+checkAge();
 
