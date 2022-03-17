@@ -235,7 +235,7 @@ ul, li{
     bottom: 0;
     left: 0;
     margin: auto;
-    transition: backgroung .2s linear;
+    transition: background-color .2s linear;
 }
 
 .toggle__item::after, .toggle__item::before {
@@ -303,7 +303,7 @@ ul, li{
     top: 0;
 }
 
-.aboutme__ocupation{
+.aboutme__occupation{
     font-family: Neucha-Regular; 
     font-size: 40px;
     font-weight: 100;
@@ -401,9 +401,9 @@ ul, li{
     box-shadow: 0px 0px 2px 1px #0E0E0E;
 }
 
-/* servises */
+/* services */
 
-.servises__emotion{
+.services__emotion{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -720,7 +720,7 @@ ul, li{
         font-weight: 600;
     }
 
-    .aboutme__ocupation {
+    .aboutme__occupation {
         font-size: 32px;
     }
 
@@ -785,13 +785,28 @@ ul, li{
         font-weight: 500;
     }
 
-    .aboutme__ocupation {
+    .aboutme__occupation {
         font-size: 26px;
+        padding: 10px 0;
     }
 
     .emotion__item {
         width: 26%;
     }
+
+    .header__inner{
+        top: 12px;
+    }
+
+    .main{
+        margin-top: 65px;
+    }
+    
+    .line__container{
+        width: 90%;
+        margin: 20px auto;
+    }
+
 }
 
 @media(max-width: 770px) {
@@ -886,7 +901,7 @@ ul, li{
         min-width: 55%;
     }
 
-    .servises__emotion {
+    .services__emotion {
         flex-direction: column;
     }
 
@@ -905,7 +920,7 @@ ul, li{
 
     .line__container {
         padding: 10px 15px;
-        margin: 10px 0;
+        margin: 10px auto;
     }
     
     .sex__title{

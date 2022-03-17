@@ -31,7 +31,7 @@ windowWidthWatcher(windowSize);
 
 let navWindow = document.querySelector('.navigation__active');
 
-navToggle.addEventListener('click', navBtnController);
+document.addEventListener('click', navBtnController);
 
 function navBtnController(e){
     if (e.target.className == 'nav__toggle' || e.target.className == 'toggle__item') {
@@ -39,8 +39,11 @@ function navBtnController(e){
         if(navWindow.style.display !== 'block') {
         navWindow.style.display = 'block';
         } else if(navWindow.style.display == 'block')
-        (navWindow.style.display = '');
-    } else {}
+        navWindow.style.display = '';
+    } else {
+        navWindow.style.display = '';
+        navToggle.classList.remove('active');
+    }
 }
 
 let ageVerificationBtns = document.querySelector('.ageverification__btns');
