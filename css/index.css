@@ -79,6 +79,7 @@ ul, li{
 .ageverification__text{
     font-size: 36px;
     color: #e7e751;
+    text-align: center;
 }
 
 .btn-no,
@@ -863,6 +864,14 @@ ul, li{
     .arrow--down {
         top: 7px;
         left: 10px;
+    }
+
+    .ageverification__text{
+        font-size: 26px;
+    }
+
+    .btn-no, .btn-yes {
+        margin: 30px 10px 0;
     }
 
 }
