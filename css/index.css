@@ -16,8 +16,6 @@
     src: url(../fonts/Neucha-Regular.ttf); 
 }
 
-
-
 body{
     margin: 0;
     padding: 0;
@@ -756,6 +754,10 @@ ul, li{
 
     .btn_prev, .btn_next {
         padding: 10px;
+    }
+
+    .list__items {
+        padding: 0 40px;
     }
 }
 
