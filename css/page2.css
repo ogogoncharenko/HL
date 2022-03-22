@@ -5,70 +5,198 @@
     src: url(../fonts/Snell\ Roundhand.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: 'Sweet Mavka Script';
+    src: url(../fonts/Sweet\ Mavka\ Script.ttf);
+}
+
+@font-face {
+    font-family: 'aavantebsextrabold';
+    src: url(../fonts/aavantebsextrabold.ttf);
+}
+
+@font-face {
+    font-family: 'aavantebs';
+    src: url(../fonts/aavantebs.ttf);
+}
 body{
     background: linear-gradient(to right, #8E0E00, #1F1C18);
     color: white;
 }
 
-.introduction__title{
+.nav__bar{
+    width: 100%;
+    color: white;
+}
+
+.nav__line{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0 0 0;
 }
 
-.introduction{
-    padding-top: 60px;
-    background-image: url(../src/page2/bg-hanna-red.png);
-    background-repeat: no-repeat;
-    background-position: left;
+.nav__logo{
+    width: 20%;
+    margin: 20px 0;
 }
 
-.introduction__logo{
-    width: 30%;
-    padding: 50px;
+.nav__text{
+    width: 65%;
 }
 
-.introduction__info{
-    width: 69%;
-}
-
-.introduction__text{
+.nav__message{
     font-family: 'Snell Roundhand';
     font-size: 36px;
     font-weight: 400;
     text-indent: 3ch;
 }
 
-.introduction__autour{
-    display: block;
+.nav__message--autour{
+    position: relative;
+    top: 0;
+    left: 550px;
     color: white;
-    padding-top: 40px;
+    margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: 200;
     font-style: italic;
-    text-align: right;
     text-decoration: none;
+    text-indent: 0;
 }
 
-.introduction__programme{
-    padding: 30px 0;
-    line-height: 3em;
+.programme__intro{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 60px 0;
 }
 
-.programme__text{
-    text-indent: 3ch;
-    font-size: 30px;
+.programme__content{
+    font-family: 'aavantebsextrabold';
+    text-align: center;
+    line-height: 2;
+    text-indent: 0
+}
+
+.programme__content--padding{
+    padding-right: 40px;
 }
 
 .programme__title{
     font-size: 40px;
-    line-height: 60px;
-    margin: 0 0 30px 0;
+
 }
 
-.programme__content{
-    
+.programme__text{
+    font-size: 30px;
+}
+
+.programme__img{
+    width: 40%;
+    border-radius: 5%;
+}
+
+.programme__line::after{
+    display: block;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: white;
+    margin: 60px auto;
+}
+
+.programme__name{
+    font-family: 'Sweet Mavka Script';
+    text-align: center;
+    line-height: 2;
+    font-size: 40px;
+}
+
+.programme__subtitle{
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.programme__subtitle--description{
+    font-size: 32px;
+}
+
+.programme__items{
+    font-family: 'aavantebs';
+    text-align: left;
+    font-size: 24px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.programme__items--center{
+    text-align: center;
+}
+
+.items__title{
+    list-style: none;
+    /* display: inline-block; */
+    text-align: left;
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.items__text{
+    list-style: none;
+    position: relative;
+    left: 10%;
+    display: block;
+    font-weight: normal;
+    font-size: 28px;
+}
+
+.text--nostyle{
+    list-style: none;
+}
+
+.text-indent{
+    text-indent: 3ch;
 }
 
 
+
+.price__list {
+    display: flex;
+    justify-content: center;
+}
+
+.programme__prices{
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+.cost__items{
+
+}
+
+.cost__item{
+
+}
+
+.cost__item:last-child{
+    font-size: 26px;
+
+}
+
+.cost__items:hover .cost__amount {
+    color: #e7e751;
+}
+
+.programme__content:last-child{
+    padding-bottom: 80px;
+}
