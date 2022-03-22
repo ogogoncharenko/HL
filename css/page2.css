@@ -200,3 +200,30 @@ body{
 .programme__content:last-child{
     padding-bottom: 80px;
 }
+
+
+/* media */
+@media(max-width: 1230px) {
+    
+
+}
+
+@media(max-width: 990px) {
+
+
+}
+
+@media(max-width: 770px) {
+
+
+}
+
+@media(max-width: 575px) {
+
+  
+}
+
+@media(max-width: 450px) {
+
+
+}
