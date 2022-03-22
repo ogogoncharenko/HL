@@ -78,6 +78,7 @@ body{
 }
 
 .programme__content{
+    position: relative;
     font-family: 'aavantebsextrabold';
     text-align: center;
     line-height: 2;
@@ -201,6 +202,9 @@ body{
     padding-bottom: 80px;
 }
 
+.pb40{
+    padding-bottom: 60px;
+}
 
 /* media */
 @media(max-width: 1230px) {
