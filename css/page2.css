@@ -404,6 +404,14 @@ body{
     .cost__items-small {
         padding: 0 0;
     }
+
+    .items__text--modify {
+        left: 9%;
+    }
+
+    .items__text--left {
+        left: -3%;
+    }
   
 }
 
