@@ -57,7 +57,6 @@ body{
 }
 
 .bar__left{
-    width: 50%;
     position: relative;
 }
 
@@ -68,7 +67,6 @@ body{
 }
 
 .bar__right{
-    width: 50%;
     position: relative;
 }
 
@@ -439,9 +437,13 @@ body{
     .kama__school{
         font-size: 25px;
     }
+
+    .HL {
+        font-size: 25px;
+    }
     
     .header__blocks {
-        top: 11px;
+        top: 13px;
     }
 
     .pb40{
