@@ -29,7 +29,7 @@ body{
     position: fixed;
     z-index: 1000;
     width: 100%;
-    height: 5%;
+    height: 56px;
     background: linear-gradient(to right, #8E0E00, #1F1C18);
     color: white;
     transition: box-shadow .3s linear;
@@ -39,7 +39,6 @@ body{
 .header__bar--visible{
     box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
     transition: box-shadow .3s linear;
-    
 }
 
 .header__blocks{
@@ -47,7 +46,7 @@ body{
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    top: 1px;
+    top: 7px;
     opacity: 0;
     transition: opacity .2s linear;
 }
@@ -116,10 +115,13 @@ body{
     text-indent: 3ch;
 }
 
+.nav__message--wrapper{
+    text-align: right;
+    margin-top: 40px;
+}
+
+
 .nav__message--autour{
-    position: relative;
-    top: 0;
-    left: 550px;
     color: white;
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
@@ -282,10 +284,6 @@ body{
     font-size: 24px;
 }
 
-.programme__content:last-child{
-    padding-bottom: 80px;
-}
-
 .pb40{
     padding-bottom: 60px;
 }
@@ -393,6 +391,21 @@ body{
         padding: 0 20px;
     }
 
+    .header__logo{
+        font-size: 25px;
+    }
+    
+    .kama__school{
+        font-size: 25px;
+    }
+    
+    .header__blocks {
+        top: 11px;
+    }
+
+    .pb40{
+        padding-bottom: 40px;
+    }
 }
 
 @media(max-width: 575px) {
@@ -473,7 +486,15 @@ body{
     .items__text--left {
         left: -3%;
     }
-  
+
+    .pb40{
+        padding-bottom: 40px;
+    }
+    
+    .programme__line::after {
+        width: 60px;
+        margin: 30px auto;
+    }
 }
 
 @media(max-width: 450px) {

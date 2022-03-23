@@ -14,15 +14,17 @@ function headerScrollController() {
     }
 }
 
-let windowSize = window.matchMedia('(max-width: 990px)');
+let windowSize = window.matchMedia('(max-width: 1030px)');
 let navToggle = document.querySelector('.nav__toggle')
 
 window.addEventListener('resize', windowWidthWatcher);
 
 function windowWidthWatcher() {
     if (windowSize.matches) {
+        console.log("hi 1")
         navToggle.style.display = "block";
-    } else if (windowSize > 990 + 'px') {
+    } else if (windowSize > 1030 + 'px') {
+        console.log("hi")
         navToggle.style.display = "none";
     } else {}
 }

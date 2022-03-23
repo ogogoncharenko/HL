@@ -287,6 +287,10 @@ ul, li{
     align-items: center;
 }
 
+.aboutme__intro{
+    width: auto;   
+}
+
 .aboutme__img{
     width: 50%;
     border-radius: 5%;
@@ -758,6 +762,28 @@ ul, li{
 
     .list__items {
         padding: 0 40px;
+    }
+}
+
+@media(max-width: 1030px) {
+
+    .navigation__active {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background: #0e0e0e;
+    }
+
+    .nav__link {
+        display: block;
+        margin: 0;
+        padding: 12px 20px;
+    }
+
+    .nav__link:first-of-type {
+        padding-top: 20px;
     }
 }
 
